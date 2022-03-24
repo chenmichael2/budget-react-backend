@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-
+    // Authenticate User
 })
 
 app.listen(3000);
