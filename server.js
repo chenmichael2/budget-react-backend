@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.post('/login', (req, res) => {
     // Authenticate User
 
-    
+    const username = req.body.username
 })
 
 app.listen(3000);
