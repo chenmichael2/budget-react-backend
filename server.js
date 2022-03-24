@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 
 const jwt = require('jsonwebtoken');
-
+// node (in terminal)
+// require('crypto').randomBytes(64).toString('hex')
 app.use(express.json());
 
 app.get('/', (req, res) => {
