@@ -24,7 +24,7 @@ app.post('/login', authenticateToken, (req, res) => {
     
 })
 
-function authenticateToken(req, res, nex) {
+function authenticateToken(req, res, next) {
     // this helps authenticate our token
     // Bearer Token
     const authHeader = req.headers['authorization'];
@@ -36,6 +36,8 @@ function authenticateToken(req, res, nex) {
         if (err) {
             return res.sendStatus(403);
         }
+        req.user = user;
+        next();
     })
 }
 
