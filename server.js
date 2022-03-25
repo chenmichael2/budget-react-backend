@@ -28,6 +28,7 @@ function authenticateToken(req, res, nex) {
     // this helps authenticate our token
     // Bearer Token
     const authHeader = req.headers['authorization'];
+    const
 }
 
 app.listen(3000);
