@@ -23,7 +23,9 @@ app.get('/', (req, res) => {
     res.json("hello you are listening to port 3000!");
 })
 
-app.get('/posts', authenticateToken, (req, res))
+app.get('/posts', authenticateToken, (req, res) => {
+    
+})
 
 app.post('/login', (req, res) => {
     // Authenticate User
