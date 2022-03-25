@@ -23,7 +23,7 @@ app.post('/login', authenticateToken, (req, res) => {
     
 })
 
-function authenitcateToken(req, res, nex) {
+function authenticateToken(req, res, nex) {
     // this helps authenticate our token
 }
 
