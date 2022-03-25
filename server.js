@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const { TokenExpiredError } = require('jsonwebtoken');
 const app = express();
 
 const jwt = require('jsonwebtoken');
@@ -25,6 +26,8 @@ app.post('/login', authenticateToken, (req, res) => {
 
 function authenticateToken(req, res, nex) {
     // this helps authenticate our token
+    Bearer Token
+    const authHeader 
 }
 
 app.listen(3000);
