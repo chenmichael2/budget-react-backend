@@ -20,7 +20,7 @@ app.post('/login', (req, res) => {
     const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET);
     res.json({ accessToken: accessToken })
 
-    function
+    function authenitcate(req, res, nex)
     
 })
 
