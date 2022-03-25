@@ -8,11 +8,24 @@ const jwt = require('jsonwebtoken');
 // require('crypto').randomBytes(64).toString('hex')
 app.use(express.json());
 
+const post = [
+    {
+        username: 'Michael',
+        title: 'Post 1'
+    },
+    {
+        username: 'Tim',
+        title: 'Post2'
+    }
+]
+
 app.get('/', (req, res) => {
     res.json("hello you are listening to port 3000!");
 })
 
-app.post('/login', authenticateToken, (req, res) => {
+app.get('/posts', authenticateToken)
+
+app.post('/login', (req, res) => {
     // Authenticate User
 
     const username = req.body.username
