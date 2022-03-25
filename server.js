@@ -24,7 +24,7 @@ app.post('/login', (req, res) => {
 })
 
 function authenitcate(req, res, nex) {
-
+    // this helps authenticate our token
 }
 
 app.listen(3000);
