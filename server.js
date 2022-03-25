@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.json("hello you are listening to port 3000!");
 })
 
-app.post('/login', (req, res) => {
+app.post('/login', authenticate, (req, res) => {
     // Authenticate User
 
     const username = req.body.username
