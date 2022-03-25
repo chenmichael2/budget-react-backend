@@ -23,5 +23,8 @@ app.post('/login', (req, res) => {
     
 })
 
-function authenitcate(req, res, nex)
+function authenitcate(req, res, nex) {
+
+}
+
 app.listen(3000);
